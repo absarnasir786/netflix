@@ -1,0 +1,492 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+  font-family: "Martel Sans", sans-serif;
+  /* overflow-x:hidden ; */
+  /* overflow: hidden; */
+}
+
+.first {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(assests/images/bg1.jpg);
+  /* height: 100vh; */
+  background-size: max(1200px, 100vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 100px;
+
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(72, 70, 70);
+}
+
+/* .first .opa{
+    height: 100vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+} */
+
+.nav {
+  padding: 10px;
+  width: 80vw;
+  /* background-color: aliceblue; */
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav img {
+  /* color: red; */
+  /* position: relative;
+    z-index: 10; */
+  /* height: 70px; */
+  width: 9.25rem;
+  height: 2.5rem;
+  padding: 10px;
+
+}
+
+button {
+  height: 30px;
+  padding: 5px 15px;
+  color: white;
+  background-color: black;
+  position: relative;
+  z-index: 10;
+  border: none;
+  margin: 11px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.first .firsttext {
+  margin: 2px;
+  margin-top: 200px;
+  gap: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.firsttext .line1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+}
+
+.firsttext .line2 {
+  margin: 8px;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.firsttext .line3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  text-align: center;
+}
+
+.firsttext input::placeholder {
+  color: rgb(252, 252, 252);
+  /* Opaque white placeholder */
+  opacity: 1;
+  /* Ensure placeholder opacity is 100% */
+}
+
+
+.firsttext input {
+  height: 50px;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+  -webkit-text-fill-color: rgb(252, 252, 252);
+  padding: 6px 20px;
+  position: relative;
+  opacity: 0.2;
+  z-index: 10;
+  background-color: transparent;
+  color: white;
+  overflow: hidden;
+
+
+  /* background: transparent; */
+  border-radius: 0.25rem;
+  border-width: 0.1rem;
+  position: relative;
+  border-color: rgb(242, 239, 239);
+
+}
+
+
+.firsttext .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+}
+
+.firsttext button3 {
+  background-color: rgb(235, 57, 66);
+  margin: 8px;
+  height: 40px;
+  width: 340px;
+  position: relative;
+  border-radius: 0.25rem;
+  border-width: 0.2rem;
+  border-color: red;
+  padding: 11px;
+  padding-left: 40px;
+  /* border: 2px solid black; */
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separation {
+  height: 8px;
+  background-color: rgb(72, 70, 70);
+}
+
+.sections{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section {
+  
+  height: 600px;
+  display: flex;
+  background-color: black;
+  /* flex-direction: column-reverse; */
+  flex-direction:row;
+}
+
+.section:nth-child(even) {
+  
+  flex-direction: row-reverse;
+ 
+
+}
+
+.sectext {
+   width: 50vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.sectext .line1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.sectext .line2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.secimage {
+   width:50vw;
+   position: relative;
+}
+
+.secimage img{
+  width: 100%;
+  height: auto;
+  display: block;
+ 
+  position: relative;
+  z-index: 1;
+}
+
+#video1 video {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 73%;
+  padding-top: 98px;
+ padding-left: 82px;
+  height: auto;
+
+  pointer-events: none; /* Prevents the video from interfering with user interactions */
+}
+
+#video2 video {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 62%;
+  padding-top: 30px;
+ padding-left: 120px;
+  height: auto;
+
+  pointer-events: none; /* Prevents the video from interfering with user interactions */
+}
+
+
+
+.second {
+  padding-left: 10%;
+  /* padding:  0px 40px; */
+  /* height: 70vh; */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  top: 0;
+}
+ 
+.separator{
+  border-top: 8px rgb(72, 70, 70);
+}
+/* .second .secimage{
+    margin: 20px;
+    padding: 100px;
+    /* width:  10vw; */
+/*     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top: 0;
+   
+  } */
+ #video1 video{
+  position: absolute;
+  top: 0;
+  /* padding-right: 30px; */
+  
+ 
+ }
+
+
+
+
+.thirdtext .line1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.thirdtext .line2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.third {
+  padding-left: 10%;
+  height: 80vh;
+  padding: 0px 40px;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  top: 0;
+}
+
+.third .thirdimage {
+
+  padding-left: 9px;
+  /* width:  10vw; */
+}
+
+
+.fourth {
+  padding-left: 10%;
+  /* padding:  0px 40px; */
+  /* height: 70vh; */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  top: 0;
+}
+
+.fourth .forimage {
+  margin: 20px;
+  padding: 100px;
+  /* width:  10vw; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+ .secimage video2 {
+  height: 30vh;
+
+  top: -40px;
+
+  position: absolute;
+  top: 0;
+  /* margin-top: 100px; */
+  padding: 200px;
+  margin-right: 4px;
+
+
+}
+
+
+.fortext .line1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.fortext .line2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+
+.fifthtext .line1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.fifthtext .line2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.fifth {
+  padding-left: 10%;
+  height: 80vh;
+  padding: 0px 40px;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  top: 0;
+}
+
+.fifth .fifthimage {
+
+  padding-left: 9px;
+  /* width:  10vw; */
+}
+
+
+.freqbox {
+  height: 100vh;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.freqbox h1 {
+  font-size: xxx-large;
+  padding: 30px;
+
+  text-align: center;
+}
+
+.box {
+  padding: 20px;
+  height: 40px;
+  width: 70vw;
+  font-size: x-large;
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box:hover {
+  background-color: rgb(110, 107, 107);
+  cursor: pointer;
+}
+
+.box svg {
+  color: white;
+}
+
+.sixth {
+  height: 45vh;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: rgb(162, 162, 162);
+  align-items: center;
+}
+
+.sixthgrid {
+  padding: 30px 30px 70px 30px;
+
+  align-content: center;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.sixthgrid div:hover {
+  cursor: pointer;
+  color: rgb(148, 144, 144);
+}
+
+.sixth p {
+  align-items: center;
+  padding: 20px 60px 1px 60px;
+}
